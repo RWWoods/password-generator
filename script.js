@@ -28,7 +28,7 @@ var passArray = [capitalArray, lowerArray, charArray, numArray];
 var choices = [capitalPrompt, lowerPrompt, charPrompt, numPrompt];
 var passFinal = [];
 var k = 0;
-random = Math.floor(Math.random() * newArray.length);
+
 
 
 
@@ -39,8 +39,11 @@ random = Math.floor(Math.random() * newArray.length);
 //     else {
 //         k++;
 //     }
-    
+
 // }
+
+// newArray = passArray.flat();
+// console.log(newArray);
 
 function generatePassword() {
     if (passLength < 8 || passLength > 128) {
@@ -50,12 +53,14 @@ function generatePassword() {
     //     return "you must choose at least one option!"
     // }
     else {
-       newArray = passArray.flat();
+        newArray = passArray.flat();
+
         for (let x = 0; x < passLength; x++) {
-         var addTo = newArray[random];
-            passFinal.push(addTo);
+            rand = Math.floor(Math.random() * newArray.length);
+            passFinal.push(newArray[rand]);
         }
     }
+    return passFinal;
 }
 
 generatePassword();
