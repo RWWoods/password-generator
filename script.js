@@ -30,28 +30,24 @@ var passFinal = [];
 var k = 0;
 
 
+for (let i = 0; i < choices.length; i++) {
+    if (choices[i] == null) {
+        passArray.splice([k], 1);
+    }
+    else {
+        k++;
+    }
 
+}
 
-// for (let i = 0; i < choices.length; i++) {
-//     if ([!i]) {
-//         passArray.splice([k], 1);
-//     }
-//     else {
-//         k++;
-//     }
-
-// }
-
-// newArray = passArray.flat();
-// console.log(newArray);
 
 function generatePassword() {
     if (passLength < 8 || passLength > 128) {
-        return "Please choose a number between 8 & 128";
+        prompt("You must choose a number between 8 & 128");
     }
-    // else if (!capitalPrompt && !lowerPrompt && !charPrompt && !numPrompt) {
-    //     return "you must choose at least one option!"
-    // }
+    else if (capitalPrompt == null && lowerPrompt == null && charPrompt == null && numPrompt == null) {
+        prompt("you must choose at least one option!");
+    }
     else {
         newArray = passArray.flat();
 
