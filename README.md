@@ -9,9 +9,9 @@ The purpose of this project is to randomly generate a password based on certain 
 To use this webapp, load the webpage and answer the criteria when prompted. If you enter criteria incorrectly (e.g. using fewer than 8 characters or selecting no criteria) you will need to refresh the page to try again. To generate a password once the criteria has been answered, simply press the generate password button shown in red in the screen show below.
 
 
-    ![a picture of the password generator](/images/passwordgen.png)
+    ![a picture of the password generator](./images/passwordgen.png)
   
-
+Here is a link to the deployed webapp: https://rwwoods.github.io/password-generator/
 ## Credits
 
 Code for the HTML and CSS, along with a small bit of started JavaScript code, comes from the UPENN LPS coding bootcamp. 
