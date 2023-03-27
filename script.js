@@ -13,7 +13,11 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-// this sections prompts user for password criteria
+
+
+
+function generatePassword() {
+    // this sections prompts user for password criteria
 var passLength = prompt("Choose a password length between 8 and 128 characters")
 if (passLength < 8 || passLength > 128) {
     prompt("You must choose a number between 8 & 128");
@@ -51,8 +55,6 @@ for (let i = 0; i < choices.length; i++) {
 
 }
 
-
-function generatePassword() {
     // we flatten the array after any unwanted arrays are spliced out in previous step.
     newArray = passArray.flat();
 // we generate a random character from the new 
@@ -67,7 +69,7 @@ function generatePassword() {
 }
 
 
-generatePassword();
+// generatePassword();
 
 
 
